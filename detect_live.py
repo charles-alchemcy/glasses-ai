@@ -21,6 +21,7 @@ print("Starting livestream detection. Press 'q' to quit.")
 
 prev_time = time.time()
 
+
 while True:
     # Timing for capture
     capture_start = time.time()
