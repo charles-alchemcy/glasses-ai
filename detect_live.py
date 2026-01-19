@@ -4,7 +4,6 @@ from ultralytics import YOLO
 from mss import mss
 import time
 
-
 # Load YOLOv8 Nano model
 model = YOLO("yolov8n.pt")
 
@@ -14,14 +13,14 @@ monitor = {"top": 0, "left": 2780, "width": 320, "height": 320}  # Adjust as nee
 
 # Frame skipping: process every nth frame for detection
 frame_skip = 2  # Adjust this (1 = no skipping, 2 = every 2nd frame, etc.)
-count = 0
-
+count = 2
 # Variable to store the last annotated frame
 last_annotated_frame = None
 
 print("Starting livestream detection. Press 'q' to quit.")
 
 prev_time = time.time()
+
 
 while True:
     # Timing for capture
