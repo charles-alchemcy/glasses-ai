@@ -5,10 +5,8 @@ from mss import mss
 sct = mss()
 print(mss().monitors)
 
-
 # Target right half of extended monitor
 monitor = {"top": 0, "left": 2780, "width": 320, "height": 320}
-
 while True:
     screenshot = sct.grab(monitor)
     frame = np.array(screenshot)

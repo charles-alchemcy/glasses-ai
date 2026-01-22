@@ -6,7 +6,6 @@ import time
 
 # Load YOLOv8 Nano model
 model = YOLO("yolov8n.pt")
-
 # Set up screen capture
 sct = mss()
 monitor = {"top": 0, "left": 2780, "width": 320, "height": 320}  # Adjust as needed
